@@ -15,8 +15,8 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.button`
-border-color: red;
-box-shadow: 3px 2px 7px 1px rgba(242, 19, 19, 1);
+border-color: green;
+
   background-color: ${props => (props.main ? 'green' : 'transparent')};
   display: inline-flex;
   width: 150px;

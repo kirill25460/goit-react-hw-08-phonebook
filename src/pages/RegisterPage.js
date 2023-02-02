@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { registerThunk } from 'redux/auth/authOperations';
-
+import { RegisterInput, Form, Button } from './RegisterPage.styled';
 export default function RegisterPage() {
 
   const [name, setName] = useState('');
@@ -29,12 +29,12 @@ const onSubmit = e => {
 
   return (
     <>
-      <form onSubmit={onSubmit}>
-        <input placeholder="enter your name" name="name" onChange={getData} value={name} type="text" />
-        <input placeholder="enter your email" name="email" onChange={getData} type="email" value={email} />
-        <input placeholder="enter your password" name="password" onChange={getData} type="password" value={password} />
-        <button type="submit">Register</button>
-      </form>
+      <Form onSubmit={onSubmit}>
+        <RegisterInput placeholder="enter your name" name="name" onChange={getData} value={name} type="text" />
+        <RegisterInput placeholder="enter your email" name="email" onChange={getData} type="email" value={email} />
+        <RegisterInput placeholder="enter your password" name="password" onChange={getData} type="password" value={password} />
+        <Button type="submit">Register</Button>
+      </Form>
     </>
   );
 }
