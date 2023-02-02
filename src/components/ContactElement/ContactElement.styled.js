@@ -13,7 +13,7 @@ margin-left: auto;
 transition: background-color 250ms linear;
 outline: none;
 &:hover{
-    background-color: green;
+    background-color: red;
     border-color: transparent;
 }
 `
